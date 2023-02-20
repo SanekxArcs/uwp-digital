@@ -13,7 +13,7 @@ module.exports = {
 
     screens: {
       phone: "360px",
-      teblet: "820px",
+      tablet: "820px",
       laptop: "1920px",
     },
 

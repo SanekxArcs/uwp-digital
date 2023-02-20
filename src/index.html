@@ -2,257 +2,749 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./input.css">
-    <link href="../dist/output.css" rel="stylesheet">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./input.css"> -->
 
-    <title>Document</title>
+    <title>UWP digital - test</title>
 </head>
 
-<body class="bg-grey">
-
-    <header class="bg-dark h-24 text-white">
-        <div class="container flex flex-row justify-center content-center">
+<body class=" bg-dark">
+    <header class="bg-dark text-white laptop:w-[1650px] mx-auto">
+        <div class="h-[90px] flex flex-row items-center justify-between">
             <!-- LOGO & THEME-->
-            <div class="flex gap-">
-                <img src="/src/img/whitelogo.svg" alt="logo" class="text-white">
-                <img class="h-6" src="/src/img/moon.svg" alt="icon to chang theme">
-
+            <div class="flex items-center gap-10">
+                <a href=""><img class="h-12" src="/src/img/whitelogo.svg" alt="logo" /></a>
+                <a href=""><img class="h-6" src="/src/img/moon.svg" alt="icon to chang theme" /></a>
             </div>
+
             <!-- NAVIGATION -->
             <nav>
-                <ul class="flex flex-row">
-                    <li class="">
-                        <a href="">
-                            CASES
-                        </a>
+                <ul class="flex flex-row gap-12">
+                    <li
+                        class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
+                        <a href=""> CASES </a>
                     </li>
-                    <li class="">
-                        <a href="">
-                            SERVICES
-                        </a>
-                        <div>
-
-                        </div>
+                    <li
+                        class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
+                        <a href=""> SERVICES </a>
+                        <div></div>
                     </li>
-                    <li class="">
-                        <a href="">
-                            ABOUT US
-                        </a>
+                    <li
+                        class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
+                        <a href=""> ABOUT US </a>
                     </li>
-                    <li class="">
-                        <a href="">
-                            BLOG
-                        </a>
+                    <li
+                        class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
+                        <a href=""> BLOG </a>
                     </li>
-                    <li class="">
+                    <li
+                        class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
                         <a href="">CONTACT</a>
                     </li>
                 </ul>
             </nav>
+
             <!-- CTA & LANG -->
-            <div>
-                <a class="uppercase after:content-[url(./img/pensil.svg)]" href="#">Let`s talk</a>
-                <a href="#">EN</a>
+            <div class="flex items-center gap-10">
+                <a class="flex gap-5 px-6 py-3 uppercase rounded-full flex-nowrap bg-main active:bg-activeRed hover:bg-lightred"
+                    href="#">
+                    Let`s talk
+                    <img class="w-4 h-4" src="./img/pensil.svg" alt="" />
+                </a>
+                <a class="flex gap-3 flex-nowrap hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4"
+                    href="#">
+                    <img class="w-6 h-6" class="" src="./img/Lang S.svg" alt="" />
+                    EN
+                </a>
             </div>
         </div>
     </header>
-    <main class="">
+    <main class="overflow-hidden">
         <!-- HERO -->
-        <section class="container mx-auto text-center">
-            <h1 class="h1">Your reliable digital<br>marketing partner</h1>
-            <p class="body ">We are a full-service digital marketing agency focused on your success. We do not sell
-                ideas. We sell a
-                solution for your business needs.</p>
-            <!--  -->
-            <div>
-                <a href="#">Discuss the project</a>
+        <section class="relative laptop:container mx-auto text-center h-[700px] flex flex-col items-center">
+            <h1 class="pt-32 text-white h1">
+                Your reliable digital<br />marketing partner
+            </h1>
+            <p class="body-p w-[660px] pt-14 text-white">
+                We are a full-service digital marketing agency focused on your
+                success. We do not sell ideas. We sell a solution for your business
+                needs.
+            </p>
+        
+        
+            <div class="blur-img"></div>
+        
+            <!-- Form -->
+            <div class="">
+                <a class="absolute flex flex-col gap-2 items-center justify-center font-bold h-44 w-44 top-[616px] left-[1294px] bg-main rounded-full text-white body"
+                    href="#">
+                    <img src="./img/link arrov.svg" alt="" />
+                    Discuss the<br />project</a>
             </div>
+
             <!-- COOKIE -->
-            <div>
-                <div>
+            <div
+                class="absolute flex rounded-full h-24 bg-dark border border-white w-[490px] text-white bottom-[-16rem] right-5 justify-center items-center gap-10">
+                <div class="flex flex-col items-start">
                     <p>THIS WEBSITE USES COOKIES.</p>
-                    <a href="">Learn more</a>
+                    <a class="font-bold text-white body" href="">Learn more</a>
                 </div>
-                <a href="#">accept</a>
+                <a class="px-10 py-4 uppercase rounded-full bg-grey" href="#">accept</a>
             </div>
         </section>
-        <!--  -->
+        <!-- Video -->
         <section class="">
-            <img src="./img/hero.png" alt="img with projects">
+            <img src="./img/hero.png" alt="img with projects" />
         </section>
-        <!--  -->
-        <section>
-            <h2 class="h2">Limitless is your new rule in business development</h2>
-            <p class="body">The digital world offers limitless possibilities for turning an idea into a successful
-                business. We are a digital marketing agency that opens these opportunities to you. With the help of
-                marketing tools and smart technologies, UWP.Digital connects customers with their favorite brands.</p>
-        </section>
-        <section>
-            <h2>Our Cases</h2>
-            <div>
-                <!-- side text -->
-                <div>
-                    <p>
-                        Whether you need to create a website, develop a UX UI design, conduct SEO optimization, develop
-                        a marketing strategy for your business, set up Google ads, and Facebook ads, or get more
-                        followers on Instagram - welcome to UWP Digital.
+        <div class="bg-light">
+            <!-- Welcome Text  -->
+            <section class="pt-24 laptop:w-[1650px] mx-auto ">
+                <div class="grid grid-cols-4 border-t place-content-center border-darkgrey">
+                    <h2 class="pt-12 font-bold uppercase border-r body-p text-dark w-96 text-start border-darkgrey">
+                        Limitless is your new
+                        <br />
+                        rule in business
+                        <br />
+                        development
+                    </h2>
+                    <p class="col-span-3 pt-12 pl-40 body-p text-start">
+                        The digital world offers limitless possibilities for turning an
+                        idea into a successful business. We are a digital marketing agency
+                        that opens these opportunities to you. With the help of marketing
+                        tools and smart technologies, UWP.Digital connects customers with
+                        their favorite brands.
                     </p>
-                    <a href="#">All Cases</a>
                 </div>
-                <!-- articles -->
-                <div>
-                    <!-- component -->
-                    <a href="#">
-                        <div>
-                            <!-- Text -->
-                            <div>
-                                <!-- arrow (absolute)-->
-                                <img src="./img/link arrov.svg" alt="link arrow">
-                                <!--  -->
-                                <h3>
-                                    Gambling vs. Marketing: when advertising boosts betting revenue
-                                </h3>
-                                <!-- article text -->
-                                <p>
-                                    Establishing a Next-Level Geosocial Networking App Establishing a Next-Level
-                                    Geosocial
-                                    Networking AppEstablishing a Next-Level Geosocial Networking App
-                                </p>
-                                <!-- tags -->
-                                <p>
-                                    marketing strategy, design
-                                </p>
-                            </div>
-                            <!-- Image -->
-                            <div>
-                                <!-- BG image -->
-                                <img src="" alt="">
-                                <!-- Text on top -->
-                                <div>
-                                    <div>
-                                        <p>
-                                            7X
-                                        </p>
-                                        <p>
-                                            cost of attracting <br> a customer
+            </section>
+            <!-- OUR CASES -->
+            <section class="relative laptop:w-[1650px] mx-auto pt-32">
+                <h2 class="border-b h2 pb-14 border-darkgrey">Our Cases</h2>
+                <div class="grid grid-cols-4 grid-rows-6 ">
+                    <!-- side text -->
+                    <div class="pr-12 row-span-full w-96">
+                        <p class="pt-12 body-16">
+                            Whether you need to create a website, develop a UX UI design,
+                            conduct SEO optimization, develop a marketing strategy for your
+                            business, set up Google ads, and Facebook ads, or get more
+                            followers on Instagram - welcome to UWP Digital.
+                        </p>
+                        <a class="sticky flex justify-center gap-5 px-10 py-3 mt-10 mt-20 font-bold text-white uppercase rounded-full body-16 bg-main active:bg-activeRed hover:bg-lightred"
+                            href="#">
+                            All Cases
+                            <img src="./img/link arrov.svg" alt="" />
+                        </a>
+                    </div>
+                    
+                    <!-- article 1 -->
+                    <div class="col-span-3">
+                        <!-- component -->
+                        <a href="#">
+                            <div class="grid grid-cols-2 border-b border-darkgrey">
+                                <!-- Text -->
+                                <div class="w-full relative pt-12 pl-12 h-[590px] border-l border-darkgrey">
+                                    <!-- arrow (absolute)-->
+                                    <img class="absolute w-6 h-6 top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                    <div class="w-[450px]">
+                                        <!--  -->
+                                        <h3 class="h3">
+                                            Gambling vs. Marketing: when advertising boosts betting
+                                            revenue
+                                        </h3>
+                                        <!-- article text -->
+                                        <p class="pt-8 body-16">
+                                            Establishing a Next-Level Geosocial Networking App
+                                            Establishing a Next-Level Geosocial Networking
+                                            AppEstablishing a Next-Level Geosocial Networking App
                                         </p>
                                     </div>
-                                    <div>
-                                        <p>CR<span>30%</span><br>audience</p>
+                                    <!-- tags -->
+                                    <p class="absolute uppercase bottom-12 left-12">
+                                        marketing strategy, design
+                                    </p>
+                                </div>
+                                <!-- Image -->
+                                <div class="relative border-l border-darkgrey">
+                                    <!-- BG image -->
+                                    <img class="pt-12 pb-12 pl-12 after:bg-gradient-to-r after:from-black after:to-transparent"
+                                        src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                    <!-- Text on top -->
+                                    <div class="absolute z-10 w-full h-full top-12 left-12">
+                                        <div class="flex items-center pt-6 pl-6 text-white">
+                                            <p class="pr-4 text-6xl font-bold">7X</p>
+                                            <p class="text-xl">
+                                                cost of attracting <br />
+                                                a customer
+                                            </p>
+                                        </div>
+                                        <div class="pl-6 text-white pt-7">
+                                            <p class="text-xl">
+                                                CR
+                                                <span class="pl-4 pr-4 text-6xl font-bold">
+                                                    30%
+                                                </span>
+                                                <br />
+                                                <span class="pt-4">
+                                                    audience
+                                                </span>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Our Services</h2>
-            <div>
-                <!-- side text -->
-                <div>
-                    <p>
-                        Our advantage is not in one-time contact with the customer, but in complex interaction with him.
-                        It allows for attracting attention and forming a trusting relationship between the company and
-                        customers for a long time.
-                    </p>
-                    <a href="#">Order a consultation</a>
-                </div>
-                <!-- articles -->
-                <div>
-                    <!-- component -->
-                    <a href="#">
-                        <!-- arrow (absolute)-->
-                        <img src="./img/link arrov.svg" alt="link arrow">
-                        <img src="" alt="">
-                        <h3>Branding</h3>
-                        <p>UWP Digital knows how to combine creativity and effectiveness in one solution. We reveal the
-                            unique story of your brand through graphic design, the tone of voice of your brand,
-                            developing logos, corporate identity, and creating a brand book for companies. The brand
-                            stories start with UWP.Digital.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Let's discuss the project</h2>
-            <div>
-                <div>
-                    <p>Marketing is often viewed as simply creating beautiful advertising. We want to change this
-                        impression and turn it 180°. If you need an SEO agency, an AdWords agency, a personal web
-                        programmer, or an entire digital media agency - welcome to UWP.Digital.</p>
-                    <a href="">Order a consultation</a>
-                </div>
-                <!-- component -->
-                <div>
-                    <div>
-                        <img src="./img/IMAGE.png" alt="">
-                        <a href="#"><img src="./img/link arrov.svg" alt=""></a>
+                        </a>
                     </div>
+                    
+                    <!-- articles 2-->
+                    <div class="col-span-3">
+                        <!-- component -->
+                        <a href="#">
+                            <div class="grid grid-cols-2 border-b border-darkgrey">
+                                <!-- Text -->
+                                <div class="w-full relative pt-12 pl-12 h-[590px]">
+                                    <!-- arrow (absolute)-->
+                                    <img class="absolute w-6 h-6 fill-dark top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                    <div class="w-[450px]">
+                                        <!--  -->
+                                        <h3 class="h3">
+                                            Gambling vs. Marketing: when advertising boosts betting
+                                            revenue
+                                        </h3>
+                                        <!-- article text -->
+                                        <p class="pt-8 body-16">
+                                            Establishing a Next-Level Geosocial Networking App
+                                            Establishing a Next-Level Geosocial Networking
+                                            AppEstablishing a Next-Level Geosocial Networking App
+                                        </p>
+                                    </div>
+                                    <!-- tags -->
+                                    <p class="absolute uppercase bottom-12 left-12">
+                                        marketing strategy, design
+                                    </p>
+                                </div>
+                                <!-- Image -->
+                                <div class="relative row-start-1 border-l border-r border-darkgrey">
+                                    <!-- BG image -->
+                                    <img class="pt-12 pb-12 pl-12" src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                    <!-- Text on top -->
+                                    <div class="absolute z-10 top-12 left-12">
+                                        <div>
+                                            <p>7X</p>
+                                            <p>
+                                                cost of attracting <br />
+                                                a customer
+                                                </p>
+                                        </div>
+                                        <div>
+                                            <p>CR<span>30%</span><br />audience</p>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </a>
+                                            </div>
+                                            
+                                            <!-- article 1 -->
+                                            <div class="col-span-3">
+                        <!-- component -->
+                        <a href="#">
+                            <div class="grid grid-cols-2 border-b border-darkgrey">
+                                <!-- Text -->
+                                <div class="w-full relative pt-12 pl-12 h-[590px] border-l border-darkgrey">
+                                    <!-- arrow (absolute)-->
+                                    <img class="absolute w-6 h-6 top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                    <div class="w-[450px]">
+                                        <!--  -->
+                                        <h3 class="h3">
+                                            Gambling vs. Marketing: when advertising boosts betting
+                                            revenue
+                                        </h3>
+                                        <!-- article text -->
+                                        <p class="pt-8 body-16">
+                                            Establishing a Next-Level Geosocial Networking App
+                                            Establishing a Next-Level Geosocial Networking
+                                            AppEstablishing a Next-Level Geosocial Networking App
+                                        </p>
+                                    </div>
+                                    <!-- tags -->
+                                    <p class="absolute uppercase bottom-12 left-12">
+                                        marketing strategy, design
+                                    </p>
+                                    </div>
+                                    <!-- Image -->
+                                    <div class="relative border-l border-darkgrey">
+                                        <!-- BG image -->
+                                        <img class="pt-12 pb-12 pl-12" src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                        <!-- Text on top -->
+                                        <div class="absolute z-10 top-12 left-12">
+                                            <div>
+                                                <p>7X</p>
+                                            <p>
+                                                cost of attracting <br />
+                                                a customer
+                                                </p>
+                                                </div>
+                                                <div>
+                                                    <p>CR<span>30%</span><br />audience</p>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </a>
+                                                </div>
+                                                
+                                                <!-- articles 2-->
+                                                <div class="col-span-3">
+                                                    <!-- component -->
+                                                    <a href="#">
+                                                        <div class="grid grid-cols-2 border-b border-darkgrey">
+                                                            <!-- Text -->
+                                                            <div class="w-full relative pt-12 pl-12 h-[590px]">
+                                                                <!-- arrow (absolute)-->
+                                                                <img class="absolute w-6 h-6 fill-dark top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                                                <div class="w-[450px]">
+                                                                    <!--  -->
+                                                                    <h3 class="h3">
+                                                                        Gambling vs. Marketing: when advertising boosts betting
+                                                                        revenue
+                                                                    </h3>
+                                                                    <!-- article text -->
+                                                                    <p class="pt-8 body-16">
+                                                                        Establishing a Next-Level Geosocial Networking App
+                                                                        Establishing a Next-Level Geosocial Networking
+                                                                        AppEstablishing a Next-Level Geosocial Networking App
+                                                                    </p>
+                                                                </div>
+                                                                <!-- tags -->
+                                                                <p class="absolute uppercase bottom-12 left-12">
+                                        marketing strategy, design
+                                        </p>
+                                        </div>
+                                        <!-- Image -->
+                                <div class="relative row-start-1 border-l border-r border-darkgrey">
+                                    <!-- BG image -->
+                                    <img class="pt-12 pb-12 pl-12" src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                    <!-- Text on top -->
+                                    <div class="absolute z-10 top-12 left-12">
+                                        <div>
+                                            <p>7X</p>
+                                            <p>
+                                                cost of attracting <br />
+                                                a customer
+                                            </p>
+                                            </div>
+                                            <div>
+                                                <p>CR<span>30%</span><br />audience</p>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </a>
+                                            </div>
+                                            
+                                            <!-- article 1 -->
+                                            <div class="col-span-3">
+                                                <!-- component -->
+                                                <a href="#">
+                                                    <div class="grid grid-cols-2 border-b border-darkgrey">
+                                                        <!-- Text -->
+                                                        <div class="w-full relative pt-12 pl-12 h-[590px] border-l border-darkgrey">
+                                                            <!-- arrow (absolute)-->
+                                                            <img class="absolute w-6 h-6 top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                                            <div class="w-[450px]">
+                                                                <!--  -->
+                                                                <h3 class="h3">
+                                                                    Gambling vs. Marketing: when advertising boosts betting
+                                                                    revenue
+                                                                </h3>
+                                                                <!-- article text -->
+                                                                <p class="pt-8 body-16">
+                                                                    Establishing a Next-Level Geosocial Networking App
+                                                                    Establishing a Next-Level Geosocial Networking
+                                                                    AppEstablishing a Next-Level Geosocial Networking App
+                                                                </p>
+                                                            </div>
+                                                            <!-- tags -->
+                                                            <p class="absolute uppercase bottom-12 left-12">
+                                                                marketing strategy, design
+                                                            </p>
+                                                        </div>
+                                                        <!-- Image -->
+                                                        <div class="relative border-l border-darkgrey">
+                                    <!-- BG image -->
+                                    <img class="pt-12 pb-12 pl-12" src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                    <!-- Text on top -->
+                                    <div class="absolute z-10 top-12 left-12">
+                                        <div>
+                                            <p>7X</p>
+                                            <p>
+                                                cost of attracting <br />
+                                                a customer
+                                            </p>
+                                            </div>
+                                                <div>
+                                                    <p>CR<span>30%</span><br />audience</p>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </a>
+                                                    </div>
+                                                    
+                                                    <!-- articles 2-->
+                                                    <div class="col-span-3">
+                                                        <!-- component -->
+                                                        <a href="#">
+                                                            <div class="grid grid-cols-2 border-b border-darkgrey">
+                                                                <!-- Text -->
+                                                                <div class="w-full relative pt-12 pl-12 h-[590px]">
+                                                                    <!-- arrow (absolute)-->
+                                                                    <img class="absolute w-6 h-6 fill-dark top-12 right-12" src="./img/arrow black.svg" alt="link arrow" />
+                                                                    <div class="w-[450px]">
+                                                                        <!--  -->
+                                                                        <h3 class="h3">
+                                                                            Gambling vs. Marketing: when advertising boosts betting
+                                                                            revenue
+                                                                        </h3>
+                                                                        <!-- article text -->
+                                                                        <p class="pt-8 body-16">
+                                                                            Establishing a Next-Level Geosocial Networking App
+                                                                            Establishing a Next-Level Geosocial Networking
+                                                                            AppEstablishing a Next-Level Geosocial Networking App
+                                                                        </p>
+                                                                    </div>
+                                                                    <!-- tags -->
+                                                                    <p class="absolute uppercase bottom-12 left-12">
+                                                                        marketing strategy, design
+                                                                    </p>
+                                </div>
+                                <!-- Image -->
+                                <div class="relative row-start-1 border-l border-r border-darkgrey">
+                                    <!-- BG image -->
+                                    <img class="pt-12 pb-12 pl-12" src="./img/Иконки кейсов_Монтажная область 1 копия 6 (1).png" alt="" />
+                                    <!-- Text on top -->
+                                    <div class="absolute z-10 top-12 left-12">
+                                        <div>
+                                            <p>7X</p>
+                                            <p>
+                                                cost of attracting <br />
+                                                a customer
+                                                </p>
+                                                </div>
+                                                <div>
+                                            <p>CR<span>30%</span><br />audience</p>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </a>
+                                            </div>
+                                            </div>
+                                            </section>
+            <!-- Our Services -->
+            <section class="relative laptop:w-[1650px] mx-auto pt-32 pb-32">
+                <h2 class="border-b h2 pb-14 border-darkgrey">Our Services</h2>
+                <div class="grid grid-cols-4 ">
+                    <!-- side text -->
+                    <div class="pr-12 row-span-full w-96">
+                        <p class="pt-12 body-16">
+                            Our advantage is not in one-time contact with the customer, but
+                            in complex interaction with him. It allows for attracting
+                            attention and forming a trusting relationship between the
+                            company and customers for a long time.
+                        </p>
+                        <a class="sticky flex justify-center gap-5 px-10 py-3 mt-10 mt-20 font-bold text-white uppercase rounded-full body-16 bg-main active:bg-activeRed hover:bg-lightred"
+                            href="#">
+                            Order a consultation
+                            <img src="./img/link arrov.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 col-span-3 grid-rows-5 ">
+                        <!-- articles 1 -->
+                        <div class="pt-16 pl-16 mr-16 border-l dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 2 -->
+                        <div class="pt-40 pl-16 border-l mr-14 dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 1 -->
+                        <div class="pt-16 pl-16 mr-16 border-l dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 2 -->
+                        <div class="pt-40 pl-16 border-l mr-14 dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+            
+                        <!-- articles 1 -->
+                        <div class="pt-16 pl-16 mr-16 border-l dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 2 -->
+                        <div class="pt-40 pl-16 border-l mr-14 dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 1 -->
+                        <div class="pt-16 pl-16 mr-16 border-l dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 2 -->
+                        <div class="pt-40 pl-16 border-l mr-14 dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+            
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img
+                                        src="./img//arrow black.svg" alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                            </a>
+                        </div>
+                        <!-- articles 1 -->
+                        <div class="pt-16 pl-16 mr-16 border-l dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img src="./img//arrow black.svg"
+                                        alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                                </a>
+                                </div>
+                        <!-- articles 2 -->
+                        <div class="pt-40 pl-16 border-l mr-14 dorder-b border-darkgrey">
+                            <!-- component -->
+                            <a href="#">
+                                <!-- arrow (absolute)-->
+                                <div class="flex items-center rounded-full w-80 h-80 bg-middlegrey"><img class="scale-125"
+                                        src="./img/Image Digital Marketing.png " alt="" /></div>
+                                
+                                <h3 class="flex justify-between pb-10 border-b h4 border-darkgrey">Branding<img src="./img//arrow black.svg"
+                                        alt="link arrow" /></h3>
+                                <p class="pt-10 border-t body-16 border-darkgrey">
+                                    UWP Digital knows how to combine creativity and effectiveness
+                                    in one solution. We reveal the unique story of your brand
+                                    through graphic design, the tone of voice of your brand,
+                                    developing logos, corporate identity, and creating a brand
+                                    book for companies. The brand stories start with UWP.Digital.
+                                </p>
+                                </a>
+                                </div>
+                                </div>
+                            </div>
+                            </section>
+                            </div>
+                            <!-- LET'S DISCUSS -->
+                            <section class="relative laptop:w-[1650px] mx-auto pt-32 text-white">
+                                <h2 class="border-b h2 pb-14 border-darkgrey">Let's discuss the project</h2>
+                                <div class="grid grid-cols-4 ">
+                                    <!-- side text -->
+                                    <div class="pr-12 row-span-full w-96">
+                                        <p class="pt-12 body-16">
+                                            Marketing is often viewed as simply creating beautiful
+                                            advertising. We want to change this impression and turn it 180°.
+                                            If you need an SEO agency, an AdWords agency, a personal web
+                                            programmer, or an entire digital media agency - welcome to
+                                            UWP.Digital.
+                                        </p>
+                                        <a class="sticky flex justify-center gap-5 px-10 py-3 mt-10 font-bold text-white uppercase rounded-full top-12 body-16 bg-main active:bg-activeRed hover:bg-lightred"
+                                            href="#">
+                                            Order a consultation
+                                            <img src="./img/link arrov.svg" alt="" />
+                                        </a>
+                                    </div>
+                            
+                                    <!-- article 1 -->
+                                    <div class="flex col-span-3 pt-12 pl-40 border-l border-darkgrey">
+
+                                        <div class="relative pr-14 ">
+                                            <img class="" src="./img/IMAGE.png" alt="" />
+                                            <a class="absolute left-0 grid w-20 h-20 rounded-full bottom-10 place-content-center bg-light" href="#"><img
+                                                    src="./img/arrow black.svg" alt="" /></a>
+                                        </div>
                     <div>
-                        <div>
-                            <img src="" alt="">
-                            <p>
+                        <div class="flex pb-8">
+                            <div class="grid w-16 h-16 rounded-full place-content-center bg-light">
+                                <img class="w-5 h-5" src="./img/qaters .svg" alt="" />
+                            </div>
+                            <p class="pl-8 text-3xl">
                                 Daniella
-                                <br>
-                                <span>
-                                    Project manager
-                                </span>
+                                <br />
+                                <span class="body-16 text-darkgrey"> Project manager </span>
                             </p>
                         </div>
-                        <p>
-                            The main advantage of social networks is the lack of boundaries. Even if your target
-                            audience
-                            lives in Spain or Sri Lanka, you can reach them on Facebook.
+                        <p class="body-p text-start pb-44">
+                            The main advantage of social networks is the lack of
+                            boundaries. Even if your target audience lives in Spain or Sri
+                            Lanka, you can reach them on Facebook.
                         </p>
-                        <div>
-                            <p>Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito</p>
-                            <div>
-                                <p>6+</p>
-                                <p>років у компанії</p>
-                            </div>
-                            <div>
-                                <p>150+</p>
-                                <p>успішних проектів</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dots -->
+                        <div class="">
+                            <p class="body-16">
+                                Працює з John Deere, STVOL, Anabel Arto, Є-Гроші, Kimito
+                            </p>
+                            <div class="flex pt-4">
+                                <div class="flex items-center">
+                                    <p class="pr-2 text-6xl font-bold text-activeRed">6+</p>
+                                    <p class="body-16">років у <br> компанії</p>
+                                </div>
+                                <div class="flex items-center pl-14">
+                                    <p class="pr-2 text-6xl font-bold text-activeRed">150+</p>
+                                    <p class="body-16">успішних <br> проектів</p>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                    <!-- Dots -->
                 <div>
 
                 </div>
+                </div>
             </div>
         </section>
+
         <!-- BLOG -->
         <section>
             <div>
                 <h2>Read Blog</h2>
                 <a href="#">
-                    <p>
-                        Read all
-                    </p>
-                    <img src="" alt="">
+                    <p>Read all</p>
+                    <img src="" alt="" />
                 </a>
             </div>
             <!-- components -->
             <div>
                 <!-- component -->
                 <div>
-                    <img src="./img/Image Branding.png" alt="">
+                    <img src="./img/Image Branding.png" alt="" />
                     <div>
                         <!-- tag -->
                         <p>Business</p>
@@ -262,7 +754,7 @@
                     <h4>Advertising for business</h4>
                 </div>
                 <div>
-                    <img src="./img/Image Branding.png" alt="">
+                    <img src="./img/Image Branding.png" alt="" />
                     <div>
                         <!-- tag -->
                         <p>Business</p>
@@ -272,7 +764,7 @@
                     <h4>Advertising for business</h4>
                 </div>
                 <div>
-                    <img src="./img/Image Branding.png" alt="">
+                    <img src="./img/Image Branding.png" alt="" />
                     <div>
                         <!-- tag -->
                         <p>Business</p>
@@ -292,39 +784,42 @@
                     <!--text absolute  -->
                     <p>Why we are</p>
 
-                    <p>Our company is the quintessence of marketing talents and Ukrainian diligence. Through our
-                        expertise, attention to detail, and deep analytics, we find a solution for any business problem.
+                    <p>
+                        Our company is the quintessence of marketing talents and
+                        Ukrainian diligence. Through our expertise, attention to detail,
+                        and deep analytics, we find a solution for any business problem.
                     </p>
                 </div>
                 <div>
-                    <p>We help companies speak the language of the customer.
-                    </p>
-                    <p>Thus, we do not rely on a one-time purchase, but attract and retain customers for a long time.
-                    </p>
-                </div>
-                <div>
+                    <p>We help companies speak the language of the customer.</p>
                     <p>
-                        We break the wall: transforming traditional marketing into digital.
-                    </p>
-                    <p>
-                        There are no boundaries in the digital world. And in your ability too.
+                        Thus, we do not rely on a one-time purchase, but attract and
+                        retain customers for a long time.
                     </p>
                 </div>
                 <div>
                     <p>
-                        We provide a full range of business promotion services:
+                        We break the wall: transforming traditional marketing into
+                        digital.
                     </p>
                     <p>
-                        from web development and conversion optimization to a/b testing and developing marketing
-                        strategies. We know how to create a website business or an entire web agency.
+                        There are no boundaries in the digital world. And in your
+                        ability too.
                     </p>
                 </div>
                 <div>
+                    <p>We provide a full range of business promotion services:</p>
                     <p>
-                        We reveal the unique story of your brand.
+                        from web development and conversion optimization to a/b testing
+                        and developing marketing strategies. We know how to create a
+                        website business or an entire web agency.
                     </p>
+                </div>
+                <div>
+                    <p>We reveal the unique story of your brand.</p>
                     <p>
-                        We know how to make customers remember you and increase brand recognition.
+                        We know how to make customers remember you and increase brand
+                        recognition.
                     </p>
                 </div>
             </div>
@@ -358,9 +853,9 @@
                 </div>
             </div>
         </section>
+
     </main>
     <footer>
-
         <div>
             <nav>
                 <ul>
