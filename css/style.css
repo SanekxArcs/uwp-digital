@@ -69,3 +69,19 @@
     line-height: 130%;
     text-align: center;
 }
+/* Add some styles for the pop up effect */
+#after-cookie {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+  #after-cookie.visible {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  /* Add some styles for the hide effect */
+  #after-cookie.hidden {
+      transform: translateY(100%);
+      opacity: 0;
+  }

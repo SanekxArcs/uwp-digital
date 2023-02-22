@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,9 +63,9 @@
                     Let`s talk
                     <img class="w-4 h-4" src="./img/pensil.svg" alt="" />
                 </a>
-                <a class="flex gap-3 flex-nowrap hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4"
+                <a class="flex gap-3 flex-nowrap hover:text-activeRed hover:underline-offset-4 active:text-middlegrey active:underline-offset-4"
                     href="#">
-                    <img class="w-6 h-6" class="" src="./img/Lang S.svg" alt="" />
+                    <img class="w-6 h-6" class="" src="./img/Eng.svg" alt="" />
                     EN
                 </a>
             </div>
@@ -75,6 +75,7 @@
 
     <main class="overflow-hidden">
         <!-- HERO -->
+          
         <section class="relative laptop:container mx-auto text-center h-[700px] flex flex-col items-center">
             <h1 class="pt-32 text-white h1">
                 Your reliable digital<br />marketing partner
@@ -90,21 +91,12 @@
 
             <!-- Form BTN -->
             <div class="">
-                <a class="absolute flex flex-col gap-2 items-center justify-center font-bold h-44 w-44 top-[616px] left-[1294px] bg-main rounded-full text-white body"
+                <a class="absolute flex flex-col gap-2 items-center justify-center font-bold h-44 w-44 top-[616px] left-[1294px] bg-main hover:bg-lightred  rounded-full text-white body"
                     href="#">
                     <img src="./img/link arrov.svg" alt="" />
                     Discuss the<br />project</a>
             </div>
-
-            <!-- COOKIE -->
-            <div
-                class="absolute flex rounded-full h-24 bg-dark border border-white w-[490px] text-white bottom-[-16rem] right-5 justify-center items-center gap-10">
-                <div class="flex flex-col items-start">
-                    <p>THIS WEBSITE USES COOKIES.</p>
-                    <a class="font-bold text-white body" href="">Learn more</a>
-                </div>
-                <a class="px-10 py-4 uppercase rounded-full bg-grey" href="#">accept</a>
-            </div>
+              
         </section>
 
 
@@ -1298,6 +1290,36 @@
                     </div>
                     <div class="col-span-3 pt-12 pl-12 border-l border-middlegrey">
 
+
+                        <div class="relative pb-10 overflow-hidden border-b border-middlegrey">
+                        <input type="checkbox" class="absolute inset-x-0 top-0 z-10 w-full h-12 opacity-0 cursor-pointer peer">
+                        <div class="flex items-center w-full h-12 pl-5">
+                            <p class="text-lg font-bold text-black transition-all duration-500 peer-checked:text-main">
+                                What is a full-service marketing agency?
+                            </p>
+                        </div>
+                        <div class="absolute text-black transition-transform duration-500 rotate-0 top-3 right-3 peer-checked:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                            </svg>
+                            
+                              
+                        </div>
+                         <div class="absolute hidden transition-transform duration-500 text-main top-3 right-3 peer-checked:block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                            </svg>
+                         </div>
+                            <div class="w-11/12 h-0 p-0 overflow-hidden transition-all duration-500 peer-checked:h-fit peer-checked:p-4">
+                                <p class="body-16">
+                                    It means that we provide a full range of digital marketing services for your business. We offer a 360° range of any project - from creating a unique name to developing a website and integrating payment systems. We are your best solution and trusted digital marketer if you need to promote Instagram or design a website.
+You do not need to apply to several marketing agencies to get the desired result. You just need to come to us.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            
+                        </div>
                         
                     </div>
                 </div>
@@ -1367,6 +1389,16 @@
             </div>
         </footer>
     </div>
+
+    <!-- COOKIE -->
+    <div id="after-cookie"
+    class="z-10 fixed flex hidden transition-all rounded-full h-24 bg-dark border border-white w-[490px] text-white bottom-5 right-5 justify-center items-center gap-10">
+    <div class="flex flex-col items-start">
+        <p>THIS WEBSITE USES COOKIES.</p>
+        <a class="font-bold text-white body" href="">Learn more</a>
+    </div>
+    <a id="close-after-cookie" class="px-10 py-4 uppercase rounded-full bg-grey" href="#">accept</a>
+</div>
     
 </body>
 

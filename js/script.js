@@ -42,3 +42,20 @@ function showSlide(n) {
   dots[slideIndex - 1].classList.remove("bg-white");
   dots[slideIndex - 1].classList.add("bg-activeRed");
 }
+
+// Wait for the page to finish loading
+window.addEventListener('load', function () {
+  // Remove the 'hidden' class from the after-cookie div
+  document.getElementById('after-cookie').classList.remove('hidden');
+
+  // Add an event listener to the close button
+  document.getElementById('close-after-cookie').addEventListener('click', function () {
+    // Hide the after-cookie div when the close button is clicked
+    document.getElementById('after-cookie').classList.add('hidden');
+  });
+
+  // Wait for a short delay before adding the 'visible' class to trigger the pop up animation
+  setTimeout(function () {
+    document.getElementById('after-cookie').classList.add('visible');
+  }, 500);
+});
