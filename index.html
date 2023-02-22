@@ -17,7 +17,7 @@
     <title>UWP digital - test</title>
 </head>
 
-<body class=" bg-dark">
+<body class=" bg-dark scroll-smooth">
     <header class="bg-dark text-white laptop:w-[1650px] mx-auto">
         <div class="h-[90px] flex flex-row items-center justify-between">
             <!-- LOGO & THEME-->
@@ -31,24 +31,24 @@
                 <ul class="flex flex-row gap-12">
                     <li
                         class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
-                        <a href=""> CASES </a>
+                        <a href="#CASES"> CASES </a>
                     </li>
                     <li
                         class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
-                        <a href=""> SERVICES </a>
+                        <a href="#SERVICES"> SERVICES </a>
                         <div></div>
                     </li>
                     <li
                         class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
-                        <a href=""> ABOUT US </a>
+                        <a href="#ABOUTUS"> ABOUT US </a>
                     </li>
                     <li
                         class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
-                        <a href=""> BLOG </a>
+                        <a href="#BLOG"> BLOG </a>
                     </li>
                     <li
                         class="hover:text-activeRed hover:underline hover:underline-offset-4 active:text-middlegrey active:underline-offset-4">
-                        <a href="">CONTACT</a>
+                        <a href="#CONTACT">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -101,10 +101,14 @@
                 <a class="px-10 py-4 uppercase rounded-full bg-grey" href="#">accept</a>
             </div>
         </section>
+
+
         <!-- Video -->
         <section class="">
             <img class="w-full" src="./img/hero.png" alt="img with projects " />
         </section>
+
+
         <div class="bg-light">
             <!-- Welcome Text  -->
             <section class="pt-24 laptop:w-[1650px] mx-auto ">
@@ -126,7 +130,7 @@
                 </div>
             </section>
             <!-- OUR CASES -->
-            <section class="relative laptop:w-[1650px] mx-auto pt-32">
+            <section id="CASES" class="relative laptop:w-[1650px] mx-auto pt-32">
                 <h2 class="border-b h2 pb-14 border-darkgrey">Our Cases</h2>
                 <div class="grid grid-cols-4 grid-rows-6 ">
                     <!-- side text -->
@@ -510,7 +514,7 @@
 
 
             <!-- Our Services -->
-            <section class="relative laptop:w-[1650px] mx-auto pt-32 pb-32">
+            <section id="SERVICES" class="relative laptop:w-[1650px] mx-auto pt-32 pb-32">
                 <h2 class="border-b h2 pb-14 border-darkgrey">Our Services</h2>
                 <div class="grid grid-cols-4 ">
                     <!-- Side text -->
@@ -793,7 +797,7 @@
         </div>
 
         <!-- LET'S DISCUSS -->
-        <section class="relative laptop:w-[1650px] mx-auto pt-32 text-white">
+        <section id="ABOUTUS" class="relative laptop:w-[1650px] mx-auto pt-32 text-white">
             <h2 class="border-b h2 pb-14 border-darkgrey">Let's discuss the project</h2>
             <div class="grid grid-cols-4 ">
                 <!-- side text -->
@@ -1147,110 +1151,154 @@
         </section>
 
         <!-- BLOG -->
-        <section>
-            <div>
-                <h2>Read Blog</h2>
-                <a href="#">
-                    <p>Read all</p>
-                    <img src="" alt="" />
+        <section id="BLOG" class="laptop:w-[1650px] mx-auto pt-36 pb-20">
+            <div class="flex items-center justify-between w-full pb-10 text-white"> 
+                <h2 class="h2">Read Blog</h2>
+                <a href="#" class="flex items-center gap-2">
+                    <p class="font-bold body-p">Read all</p>
+                    <img class="p-2 border border-white rounded-full" src="/img/link arrov.svg" alt="" />
                 </a>
             </div>
-            <!-- components -->
-            <div>
-                <!-- component -->
-                <div>
-                    <img src="./img/Image Branding.png" alt="" />
-                    <div>
-                        <!-- tag -->
-                        <p>Business</p>
-                        <!-- Date -->
-                        <p>24.08.2022</p>
+            <!-- ComponentS -->
+            <div class="flex justify-between text-white">
+                <!-- ! Component -->
+                <!-- Link to blog post -->
+                <a href="">
+                    <div class="flex flex-col ">
+                        <!-- Image blog post -->
+                        <img src="./img/Rectangle 22.png" alt="" />
+                        <div class="flex items-center gap-4 mt-6 text-sm">
+                            <!-- Tag -->
+                            <p class="px-3 py-2 rounded-full bg-grey">Business</p>
+                            <!-- Post Date  -->
+                            <p class="">24.08.2022</p>
+                        </div>
+                        <!-- Post Title  -->
+                        <h4 class="pt-4 body-p text-start">Advertising for business</h4>
                     </div>
-                    <h4>Advertising for business</h4>
-                </div>
-                <div>
-                    <img src="./img/Image Branding.png" alt="" />
-                    <div>
-                        <!-- tag -->
-                        <p>Business</p>
-                        <!-- Date -->
-                        <p>24.08.2022</p>
+                </a>
+                <!-- ! Component 2 -->
+                <!-- Link to blog post -->
+                <a href="">
+                    <div class="flex flex-col ">
+                        <!-- Image blog post -->
+                        <img src="./img/Rectangle 22 (1).png" alt="" />
+                        <div class="flex items-center gap-4 mt-6 text-sm">
+                            <!-- Tag -->
+                            <p class="px-3 py-2 rounded-full bg-grey">Business</p>
+                            <!-- Post Date  -->
+                            <p class="">24.08.2022</p>
+                        </div>
+                        <!-- Post Title  -->
+                        <h4 class="pt-4 body-p text-start">Social media advertising</h4>
                     </div>
-                    <h4>Advertising for business</h4>
-                </div>
-                <div>
-                    <img src="./img/Image Branding.png" alt="" />
-                    <div>
-                        <!-- tag -->
-                        <p>Business</p>
-                        <!-- Date -->
-                        <p>24.08.2022</p>
+                </a>
+                <!-- ! Component 3 -->
+                <!-- Link to blog post -->
+                <a href="">
+                    <div class="flex flex-col ">
+                        <!-- Image blog post -->
+                        <img src="./img/Rectangle 22 (2).png" alt="" />
+                        <div class="flex items-center gap-4 mt-6 text-sm">
+                            <!-- Tag -->
+                            <p class="px-3 py-2 rounded-full bg-grey">Business</p>
+                            <!-- Post Date  -->
+                            <p class="">24.08.2022</p>
+                        </div>
+                        <!-- Post Title  -->
+                        <h4 class="pt-4 body-p text-start">Internet promotion</h4>
                     </div>
-                    <h4>Advertising for business</h4>
-                </div>
+                </a>
             </div>
         </section>
-        <!-- CTA -->
-        <section>
-            <!-- side bnt -->
-            <div><a href=""></a></div>
-            <div>
-                <div>
-                    <!--text absolute  -->
-                    <p>Why we are</p>
 
-                    <p>
+
+        <!-- WHY We -->
+        <section class="relative laptop:w-[1650px] mx-auto pt-32 pb-36">
+            <div class="grid grid-cols-4 grid-rows-1 border-t border-darkgrey">
+                <!-- side text -->
+                <div class="pr-12 row-span-full w-96 ">
+                    <a class="sticky flex justify-center gap-5 px-10 py-3 mt-10 mt-20 font-bold text-white uppercase rounded-full body-16 bg-main active:bg-activeRed hover:bg-lightred"
+                        href="#">
+                        Become a client
+                        <img src="./img/link arrov.svg" alt="" />
+                    </a>
+                </div>
+            <!-- Content container -->
+            <div class="col-span-3 text-white">
+                <!-- Componetn  -->
+                <div class="relative flex justify-end h-64 border-b border-l border-darkgrey">
+                    <!--Text absolute  -->
+                    <p class="absolute top-12 left-12 text-middlegrey body-16">Why we are</p>
+                    
+                    <p class="pt-12 text-3xl text-start w-[950px]">
                         Our company is the quintessence of marketing talents and
                         Ukrainian diligence. Through our expertise, attention to detail,
                         and deep analytics, we find a solution for any business problem.
                     </p>
                 </div>
-                <div>
-                    <p>We help companies speak the language of the customer.</p>
-                    <p>
-                        Thus, we do not rely on a one-time purchase, but attract and
-                        retain customers for a long time.
-                    </p>
-                </div>
-                <div>
-                    <p>
-                        We break the wall: transforming traditional marketing into
-                        digital.
-                    </p>
-                    <p>
-                        There are no boundaries in the digital world. And in your
-                        ability too.
-                    </p>
-                </div>
-                <div>
-                    <p>We provide a full range of business promotion services:</p>
-                    <p>
-                        from web development and conversion optimization to a/b testing
-                        and developing marketing strategies. We know how to create a
-                        website business or an entire web agency.
-                    </p>
-                </div>
-                <div>
-                    <p>We reveal the unique story of your brand.</p>
-                    <p>
-                        We know how to make customers remember you and increase brand
-                        recognition.
-                    </p>
+                <!-- Grid 2 x 2 -->
+                <!-- Item 1 -->
+                <div class="grid grid-cols-2 grid-rows-2 border-l border-darkgrey">
+                    <div class="flex flex-col justify-start p-12 border-b border-darkgrey">
+                        <p class="text-left body-p">We help companies speak the language of the customer.</p>
+                        <p class="pt-4 font-medium body-16">
+                            Thus, we do not rely on a one-time purchase, but attract and
+                            retain customers for a long time.
+                        </p>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="flex flex-col justify-start p-12 border-b border-l border-darkgrey">
+                        <p class="text-left body-p">
+                            We break the wall: transforming traditional marketing into
+                            digital.
+                        </p>
+                        <p class="pt-4 font-medium body-16">
+                            There are no boundaries in the digital world. And in your
+                            ability too.
+                        </p>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="flex flex-col justify-start p-12 border-l border-darkgrey">
+                        <p class="text-left body-p">
+                            We provide a full range of business promotion services:
+                        </p>
+                        <p class="pt-4 font-medium body-16">
+                            from web development and conversion optimization to a/b testing
+                            and developing marketing strategies. We know how to create a
+                            website business or an entire web agency.
+                        </p>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="flex flex-col justify-start p-12 border-l border-darkgrey">
+                        <p class="text-left body-p">
+                            We reveal the unique story of your brand.</p>
+                        <p class="pt-4 font-medium body-16">
+                            We know how to make customers remember you and increase brand
+                            recognition.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
+
         <!-- FAQ -->
-        <section>
-            <h2>FAQ</h2>
-            <div>
-                <div>
-                    <p>VI SVARAR PÅ DE VANLIGASTE FRÅGOR</p>
+        <div class="bg-white">
+            <section class="relative laptop:w-[1650px] mx-auto pt-32 pb-36">
+                <h2 class="border-b h2 pb-14 border-darkgrey">FAQ</h2>
+                <div class="grid grid-cols-4 grid-rows-1">
+                    <!-- side text -->
+                    <div class="pr-12 row-span-full w-96 ">
+                        <p class="pt-12 body-16 text-middlegrey">VI SVARAR PÅ DE VANLIGASTE FRÅGOR</p>
+                    </div>
+                    <div class="col-span-3 border-l border-darkgrey"> 
+                        
+                    </div>
                 </div>
-                <div>
-                    <!--  -->
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <!-- FAQ -->
+        
 
         <section>
             <h2>Let's promote your business</h2>
@@ -1270,42 +1318,45 @@
         </section>
 
     </main>
-    <footer>
-        <div>
-            <nav>
-                <ul>
-                    <li>About us</li>
-                    <li>Case Studies</li>
-                    <li>Services</li>
-                    <li>Blog</li>
-                    <li>Contacrt</li>
-                </ul>
-            </nav>
-            <div>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+    <div class="bg-white">
+        <footer class="laptop:w-[1650px] mx-auto flex flex-col">
+            <div class="flex justify-between">
+                <nav class="flex gap-16">
+                    <ul>
+                        <li>About us</li>
+                        <li>Case Studies</li>
+                        <li>Services</li>
+                        <li>Blog</li>
+                        <li>Contacrt</li>
+                    </ul>
+                </nav>
+                <div class="flex">
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
             </div>
-        </div>
 
-        <div>
-            <a href="">Branding</a>
-            <a href="">DIGITAL MARKETING</a>
-            <a href="">WEB design</a>
-            <a href="">smm</a>
-            <a href="">ppc</a>
-            <a href="">tiktok</a>
-            <a href="">VIDEO MOTION</a>
-            <a href="">seo</a>
-            <a href="">MOBILE PROMOTION</a>
-        </div>
-        <div>
-            <p>© 2022 Unity World Platform. All rights reserved.</p>
-            <a href="">Terms & Conditions</a>
-            <a href="">Privacy Policy</a>
-        </div>
-    </footer>
+            <div>
+                <a href="">Branding</a>
+                <a href="">DIGITAL MARKETING</a>
+                <a href="">WEB design</a>
+                <a href="">smm</a>
+                <a href="">ppc</a>
+                <a href="">tiktok</a>
+                <a href="">VIDEO MOTION</a>
+                <a href="">seo</a>
+                <a href="">MOBILE PROMOTION</a>
+            </div>
+            <div>
+                <p>© 2022 Unity World Platform. All rights reserved.</p>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+    
 </body>
 
 </html>
