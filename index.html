@@ -12,12 +12,15 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="./dist/output.css" rel="stylesheet" />
+    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
     <script defer src="./js/script.js"></script>
 
     <title>UWP digital - test</title>
 </head>
 
 <body class=" bg-dark scroll-smooth">
+
+
     <header class="bg-dark text-white laptop:w-[1650px] mx-auto">
         <div class="h-[90px] flex flex-row items-center justify-between">
             <!-- LOGO & THEME-->
@@ -68,6 +71,8 @@
             </div>
         </div>
     </header>
+
+
     <main class="overflow-hidden">
         <!-- HERO -->
         <section class="relative laptop:container mx-auto text-center h-[700px] flex flex-col items-center">
@@ -83,7 +88,7 @@
 
             <div class="blur-img"></div>
 
-            <!-- Form -->
+            <!-- Form BTN -->
             <div class="">
                 <a class="absolute flex flex-col gap-2 items-center justify-center font-bold h-44 w-44 top-[616px] left-[1294px] bg-main rounded-full text-white body"
                     href="#">
@@ -105,7 +110,7 @@
 
         <!-- Video -->
         <section class="">
-            <img class="w-full" src="./img/hero.png" alt="img with projects " />
+            <img class="h-auto max-w-full" src="./img/hero.png" alt="img with projects " />
         </section>
 
 
@@ -514,11 +519,11 @@
 
 
             <!-- Our Services -->
-            <section id="SERVICES" class="relative laptop:w-[1650px] mx-auto pt-32 pb-32">
+            <section id="SERVICES" class=" laptop:w-[1650px] mx-auto pt-32 pb-32">
                 <h2 class="border-b h2 pb-14 border-middlegrey">Our Services</h2>
                 <div class="grid grid-cols-4 ">
                     <!-- Side text -->
-                    <div class="relative pr-12 row-span-full w-96">
+                    <div class="relative h-full pr-12 row-span-full w-96">
                         <p class="pt-12 body-16">
                             Our advantage is not in one-time contact with the customer, but
                             in complex interaction with him. It allows for attracting
@@ -526,7 +531,7 @@
                             company and customers for a long time.
                         </p>
                         <!-- Side btn -->
-                        <a class="sticky flex justify-center gap-5 px-10 py-3 mt-10 font-bold text-white uppercase rounded-full body-16 bg-main active:bg-activeRed hover:bg-lightred"
+                        <a class="sticky top-0 flex items-end gap-5 px-10 py-3 mt-10 font-bold text-white uppercase rounded-full justify-items-center bg-main body-16 active:bg-activeRed hover:bg-lightred"
                             href="#">
                             Order a consultation
                             <img src="./img/link arrov.svg" alt="" />
@@ -1291,7 +1296,8 @@
                     <div class="pr-12 row-span-full w-96 ">
                         <p class="pt-12 body-16 text-middlegrey">VI SVARAR PÅ DE VANLIGASTE FRÅGOR</p>
                     </div>
-                    <div class="col-span-3 border-l border-middlegrey"> 
+                    <div class="col-span-3 pt-12 pl-12 border-l border-middlegrey">
+
                         
                     </div>
                 </div>
