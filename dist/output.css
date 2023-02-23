@@ -3481,6 +3481,10 @@ video {
     top: 650px;
   }
 
+  .laptop\:-right-96 {
+    right: -24rem;
+  }
+
   .laptop\:col-span-3 {
     grid-column: span 3 / span 3;
   }
