@@ -3429,6 +3429,10 @@ video {
     display: flex;
   }
 
+  .tablet\:hidden {
+    display: none;
+  }
+
   .tablet\:h-full {
     height: 100%;
   }
