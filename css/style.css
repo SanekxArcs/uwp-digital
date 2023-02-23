@@ -1,3 +1,7 @@
+:root {
+    --unchecked-color: ;
+    --checked-color: #0a0;
+}
 .h1 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -77,11 +81,5 @@
 
   #after-cookie.visible {
       transform: translateY(0);
-      opacity: 1;
-  }
-
-  /* Add some styles for the hide effect */
-  #after-cookie.hidden {
-      transform: translateY(100%);
-      opacity: 0;
-  }
+    opacity: 1;
+    }

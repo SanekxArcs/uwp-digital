@@ -59,3 +59,5 @@ window.addEventListener('load', function () {
     document.getElementById('after-cookie').classList.add('visible');
   }, 500);
 });
+
+
