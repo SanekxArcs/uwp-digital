@@ -5,7 +5,7 @@ module.exports = {
     container: {
       width: {
         DEFAULT: "100%",
-        phone: "320pxm",
+        phone: "320px",
         tablet: "760px",
         laptop: "1650px",
       },

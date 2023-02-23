@@ -1,4 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {}
+@layer components {
+
+
+    .h1 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 100%;
+        /* identical to box height, or 120px */
+        text-transform: uppercase;
+    }
+
+    .h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 110%;
+        /* identical to box height, or 99px */
+        text-transform: uppercase;
+    }
+
+    .h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        /* or 38px */
+        /* Dark */
+        color: #171717;
+    }
+
+    .h4 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    .body-16 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    .blur-img {
+        position: absolute;
+        width: 591px;
+        height: 591px;
+        left: 1562px;
+        top: 110px;
+        background: radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%);
+        filter: blur(90px);
+    }
+
+    .body-p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    /* Add some styles for the pop up effect */
+    #after-cookie {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    #after-cookie.visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
