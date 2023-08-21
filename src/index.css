@@ -2,22 +2,22 @@
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: #aae9d2 #222244;
+    scrollbar-color: #DC2D45 #222244;
 }
 
 *::-webkit-scrollbar {
-    width: 8px;
+    width: 1px;
     height: 0;
 }
 
 *::-webkit-scrollbar-track {
-    background: #222244;
+    background: hsla(240, 33%, 20%, 0);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #41B883;
+    background-color: #DC2D45;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #DC2D45;
 }
 
 @tailwind components;
@@ -29,7 +29,7 @@
     left: 0;
     right: 0;
     height: 5px;
-    background: #41B883;
+    background: #DC2D45;
     transform-origin: 0%;
 }
 
@@ -73,14 +73,6 @@
         line-height: 120%;
     }
 
-    .body-16 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 140%;
-    }
-
     .h5 {
         font-family: 'Montserrat';
         font-style: normal;
@@ -97,25 +89,5 @@
         top: 110px;
         background: radial-gradient(50% 50% at 50% 50%, #FF304D 0%, rgba(255, 48, 77, 0) 100%);
         filter: blur(90px);
-    }
-
-    .body-p {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 130%;
-        text-align: center;
-    }
-
-    /* Add some styles for the pop up effect */
-    #after-cookie {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-
-    #after-cookie.visible {
-        transform: translateY(0);
-        opacity: 1;
     }
 }
